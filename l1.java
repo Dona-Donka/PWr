@@ -62,3 +62,25 @@ public class l1
             System.out.printf("Substract = %.1f + %.1fi"+'\n', substract1.a1, substract1.b1);
             return (substract1);
         }
+     static Complex multiply(Complex complex1, Complex complex2)
+        {
+            Complex multiply1 = new Complex(0,0);
+            multiply1.a1 = complex1.a1 * complex2.a1;
+            multiply1.b1 = complex1.b1 * complex2.b1;
+            System.out.printf("Multiply = %.1f + %.1f"+'\n', multiply1.a1, multiply1.b1);
+            return (multiply1);
+        }
+
+    public static void main(String[] args)
+        {
+
+            Complex complex1 = new Complex(1, 2);
+            Complex complex2 = new Complex(3,4);
+            out.println("Hello - program działa");
+            show(complex1,complex2);
+            show_complex(complex1,complex2);
+            add(complex1,complex2);
+            substract(complex1,complex2);
+            multiply(complex1, complex2);
+            polar(complex1);
+        }
